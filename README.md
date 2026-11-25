@@ -150,3 +150,7 @@ I designed the system and directed AI chat assistants to write most of the code,
 kept the sheet data model). I ran every change against a live YouTrack project, read the logs, and decided what to fix.
 [LESSONS.md](LESSONS.md) is the record of what went wrong and what fixed it. This copy, its tests and its docs were made
 with Claude Code.
+
+## License
+
+Shared for viewing only. No license is granted; all rights reserved.
