@@ -1,0 +1,8 @@
+Test_Type	Category	Sub_Category	Description	Steps	Expected_Result	Data_Source_Sheet	Data_Source_Column
+Single Task	Technical	Verification	**Objective:** Confirm build ${Build_Version} starts and reaches gameplay on ${Platform}.	1. Install build ${Build_Version}.\n2. Launch it.\n3. Start a new game and play for two minutes.	The game reaches gameplay with no crash or blocker.		
+Single Task	Content	Playthrough	**Objective:** Play ${Level_Name} from start to finish.	1. Load ${Level_Name}.\n2. Complete it on default settings.\n3. Note any soft lock or missing collision.	${Level_Name} can be completed with no blocker.		
+Single Task	Game Systems	Functionality	**Objective:** Check that saving and loading keeps the ${System_Name} state.	1. Change the ${System_Name} state.\n2. Save, quit to the title screen and load.	The ${System_Name} state after loading matches the state before saving.		
+Checklist (Manual)	UI/UX	Functionality	Every setting in the Options menu is kept after a restart.				
+Checklist (Manual)	UI/UX	Functionality	Volume sliders change the volume right away.				
+Checklist (Manual)	UI/UX	Functionality	Button remapping can be reset to the defaults.				
+Checklist (from Sheet)	UI/UX	Verification	**Objective:** Check every UI string in ${Language}.	1. Open the screen where the string appears.\n2. Compare it with the source text.	The text fits its box, has no typo and is not cut off.		

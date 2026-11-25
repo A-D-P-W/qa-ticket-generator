@@ -1,0 +1,31 @@
+String_ID	String_Text
+UI_001	Start Game
+UI_002	Continue
+UI_003	Load Game
+UI_004	Options
+UI_005	Quit
+UI_006	Resume
+UI_007	Restart Level
+UI_008	Return to Title
+UI_009	Audio
+UI_010	Music Volume
+UI_011	Effects Volume
+UI_012	Video
+UI_013	Fullscreen
+UI_014	Brightness
+UI_015	Controls
+UI_016	Remap Buttons
+UI_017	Reset to Defaults
+UI_018	Language
+UI_019	Subtitles
+UI_020	Accessibility
+UI_021	Save complete
+UI_022	Saving. Do not turn off the power.
+UI_023	Quit to the title screen?
+UI_024	Yes
+UI_025	No
+UI_026	Back
+UI_027	Confirm
+UI_028	Press any button
+UI_029	Game Over
+UI_030	Try Again

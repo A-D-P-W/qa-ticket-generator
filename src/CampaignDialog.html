@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+  </head>
+  <body>
+    <div class="block">
+      <p>Select a campaign to run:</p>
+      
+      <div class="block">
+        <select id="campaign-select" style="width: 100%;">
+          <? for (let i = 0; i < campaigns.length; i++) { ?>
+            <option value="<?= campaigns[i] ?>"><?= campaigns[i] ?></option>
+          <? } ?>
+        </select>
+      </div>
+      
+      <div class="block" style="margin-top: 10px;">
+        <button class="action" onclick="runCampaign()">Run</button>
+        <button onclick="google.script.host.close()">Cancel</button>
+      </div>
+    </div>
+
+    <script>
+      function runCampaign() {
+        var selectedCampaign = document.getElementById('campaign-select').value;
+        if (selectedCampaign) {
+          // Disable button to prevent double-clicks
+          document.querySelector('.action').disabled = true;
+          document.querySelector('.action').textContent = 'Running...';
+          google.script.run
+            .withSuccessHandler(function() {
+              google.script.host.close();
+            })
+            .withFailureHandler(function(error) {
+              alert('Error: ' + error.message);
+              google.script.host.close();
+            })
+            .QAGEN_executeCampaign(selectedCampaign);
+        }
+      }
+    </script>
+  </body>
+</html>

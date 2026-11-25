@@ -1,0 +1,12 @@
+Job_ID	Impact_Level	Generate?	Test_Type	Category	Sub_Category	Task_Title_Override	Priority	Campaign	Depends_On	Parameters	Data_Source_Sheet	Data_Source_Column	Trigger_Type	Trigger_Value	Last_Run	YouTrack_Ticket_ID	YouTrack_Permanent_ID	YouTrack_Status	YouTrack_Ticket_URL
+DONE-001	High	FALSE	Single Task	Technical	Verification	[Smoke] Build 0.0.9 on ${Platform}	Critical	Smoke								DEMO-1	0-1	Verified	View Ticket
+SMK-001	High	TRUE	Single Task	Technical	Verification	[Smoke] Build ${Build_Version} on ${Platform}	Critical	Smoke											
+SMK-002	High	TEST	Single Task	Content	Playthrough	[Playthrough] ${Level_Name}	Major	Smoke		Level_Name:Level 1 (Tutorial)									
+LVL-002	Medium	TRUE	Single Task	Content	Playthrough	[Playthrough] ${Level_Name}	Major	Regression											
+OPT-001	Medium	TRUE	Checklist (Manual)	UI/UX	Functionality		Normal	Regression	DONE-001										
+TXT-001	Medium	TRUE	Checklist (from Sheet)	UI/UX	Verification	[Text] UI strings (${Language})	Normal	Localization, Regression	DONE-001	Language:French	_Sample_UI_Strings	String_Text							
+DEP-001	Low	TRUE	Single Task	Game Systems	Functionality	[Save/Load] ${System_Name}	Normal	Regression	SMK-001	System_Name:Inventory									
+BOSS-001	Low	TRUE	Single Task	Gameplay	Boss Fight		Normal												
+SCH-001	Low	TRUE	Single Task	Technical	Verification	[Smoke] Milestone build ${Build_Version}	Major	Scheduled					On Date	2026-03-01					
+SCH-002	Low	TRUE	Single Task	Technical	Verification	[Smoke] Weekly build ${Build_Version}	Normal	Scheduled					Weekly	Monday					
+SCH-003	Low	TRUE	Single Task	Technical	Verification	[Smoke] Every 7 days ${Build_Version}	Normal	Scheduled					Recurring	7					
